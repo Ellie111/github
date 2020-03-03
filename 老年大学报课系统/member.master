@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#"  AutoEventWireup="true" CodeFile="member.master.cs" Inherits="member" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>夕阳红老年大学报课管理系统</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+<div class="waper">
+
+<div class="header">
+ <div class="top">  
+     <div class="grzx"><a href="user_login.aspx">欢迎访问系统 </a> <a href="admin_login.aspx">管理登录</a>   </div>
+      <div class="form"> 
+          
+          <asp:TextBox ID="txtSou_suo" runat="server" Height="30px" Width="170px"></asp:TextBox>
+        
+          
+             <asp:Button ID="btnZhao" runat="server" Text="查 找" Height="30px" Width="70px" OnClick="btnZhao_Click" />
+      </div>
+     </div>
+
+<div class="nav">
+        <ul>
+	     
+	   <li><a href="about.aspx">关于我们</a></li>
+		<li><a href="news.aspx">新闻动态</a></li>
+          	<li><a href="course.aspx">在线课程</a></li>
+          	<li><a href="teacher.aspx">师资力量</a></li>
+       
+
+
+
+
+
+   
+<li id="loading" visible="true" runat ="server"> <a  href="admin_login.aspx" >用户登录</a></li>
+                <li id="load" visible="false" runat="server"><a href="member_info.aspx"><%=Session["yhm"]%></a> <a href="loginout.aspx">退出</a></li>  
+ </ul>
+
+   </div>
+</div>
+
+<div class="main">
+  <div class="wapper">
+  <div class="ny-ad"><img src="images/ny-ban.jpg"></div> 
+
+  <div class="h-left">
+     
+    <div class="line"></div> 
+<div class="jrtj">
+   <h3>
+<a href="#">个人导航</a>
+</h3>
+ <ul>
+   <li><a href="member_info.aspx">个人信息</a></li>
+        <li><a href="member_account.aspx">账户管理</a></li>
+        <li><a href="member_dingdan.aspx">我的订单</a></li>
+         <li><a href="member_pinglun.aspx">我的评论</a></li>
+
+
+
+</ul>
+
+
+
+</div>  
+<div class="wljy"><a href="#"><img src="images/ad3.jpg"></a></div>
+
+</div>
+  
+
+
+        
+        
+<div class="h-right"> 
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+</div>
+</div>
+
+  <div class="clear"></div>
+ <div class="foot">
+     <div class="bq">
+	  
+	  <p style=" padding:50px 0 0 0;"> 版权所有 翻版必究</p>
+	  
+	  </div>
+	 </div> 
+<div class="clear"></div>	  
+</div>
+                
+</form>
+</body>
+</html>

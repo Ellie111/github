@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>ListBookServlet</servlet-name>
+    <servlet-class>com.hbsi.web.controller.ListBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BuyServlet</servlet-name>
+    <servlet-class>com.hbsi.web.controller.BuyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteItemServlet</servlet-name>
+    <servlet-class>com.hbsi.web.controller.DeleteItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListCartServlet</servlet-name>
+    <servlet-class>com.hbsi.web.ui.ListCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ClearCartServlet</servlet-name>
+    <servlet-class>com.hbsi.web.controller.ClearCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangeQuantitySevlet</servlet-name>
+    <servlet-class>com.hbsi.web.controller.ChangeQuantitySevlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ListBookServlet</servlet-name>
+    <url-pattern>/servlet/ListBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BuyServlet</servlet-name>
+    <url-pattern>/servlet/BuyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteItemServlet</servlet-name>
+    <url-pattern>/servlet/DeleteItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListCartServlet</servlet-name>
+    <url-pattern>/servlet/ListCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClearCartServlet</servlet-name>
+    <url-pattern>/servlet/ClearCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeQuantitySevlet</servlet-name>
+    <url-pattern>/servlet/ChangeQuantitySevlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

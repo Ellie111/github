@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+ <div class="wap">
+   <div class="head">
+ <p><img src="images/top.jpg"></p>
+  </div>
+<div class="nav">
+<h3>后台管理</h3>
+ <ul>
+	<li  class="home"><a href="admin.aspx">人员管理 </a></li>
+	
+    <li><a href="admin_news.aspx">新闻管理   </a></li>
+	<li><a href="admin_teacher.aspx">师资管理 </a></li>
+          <li><a href="admin_course.aspx">课程管理 </a></li>
+            <li><a href="admin_dingdan.aspx">订单管理 </a></li>
+               <li><a href="admin_pinglun.aspx">评论管理 </a></li>
+    <li><a href="admin_cw.aspx">财务管理</a></li>
+      <li><a href="admin_xs.aspx">销售管理</a></li>
+
+ 
+	<li><a href="../loginout.aspx">退出管理</a></li>
+
+ </ul>
+
+
+</div>
+<div class="main">
+
+
+
+
+        
+       <div class="ny-right">
+
+
+     <div id="twjs">
+
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+
+<div class="foot">
+     <div class="bq">
+	  
+	  <p style=" padding:50px 0 0 0;"> 版权所有 翻版必究</p>
+	  
+	  </div>
+	 </div>
+  
+</form>
+</body>
+</html>
